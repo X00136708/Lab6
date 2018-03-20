@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/webapps/lab6/conf/routes
-// @DATE:Thu Mar 15 20:12:08 GMT 2018
+// @DATE:Tue Mar 20 16:04:27 GMT 2018
 
 import play.api.mvc.Call
 

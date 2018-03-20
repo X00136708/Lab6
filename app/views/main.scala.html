@@ -39,8 +39,11 @@
                         <a href="@controllers.security.routes.LoginCtrl.logout()">Logout @user.getName()</a>
                     } else {
                         <a href="@controllers.security.routes.LoginCtrl.login()">Login</a>
-                    }
+                    } 
 
+                </li>
+                <li>
+                    <a href="@routes.ShoppingCtrl.viewOrders(0)">View Orders</a>
                 </li>
             </ul>
 

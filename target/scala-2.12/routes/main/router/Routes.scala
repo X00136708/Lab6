@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/webapps/lab6/conf/routes
-// @DATE:Thu Mar 15 20:12:08 GMT 2018
+// @DATE:Tue Mar 20 16:04:27 GMT 2018
 
 package router
 
@@ -21,9 +21,9 @@ class Routes(
   LoginCtrl_3: controllers.security.LoginCtrl,
   // @LINE:19
   ShoppingCtrl_1: controllers.ShoppingCtrl,
-  // @LINE:28
+  // @LINE:29
   AdminProductCtrl_2: controllers.AdminProductCtrl,
-  // @LINE:41
+  // @LINE:42
   Assets_4: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -36,9 +36,9 @@ class Routes(
     LoginCtrl_3: controllers.security.LoginCtrl,
     // @LINE:19
     ShoppingCtrl_1: controllers.ShoppingCtrl,
-    // @LINE:28
+    // @LINE:29
     AdminProductCtrl_2: controllers.AdminProductCtrl,
-    // @LINE:41
+    // @LINE:42
     Assets_4: controllers.Assets
   ) = this(errorHandler, ProductCtrl_0, LoginCtrl_3, ShoppingCtrl_1, AdminProductCtrl_2, Assets_4, "/")
 
@@ -315,7 +315,7 @@ class Routes(
     )
   )
 
-  // @LINE:28
+  // @LINE:29
   private[this] lazy val controllers_AdminProductCtrl_index13_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("Admin")))
   )
@@ -333,7 +333,7 @@ class Routes(
     )
   )
 
-  // @LINE:30
+  // @LINE:31
   private[this] lazy val controllers_AdminProductCtrl_listProducts14_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("Admin/listProducts")))
   )
@@ -351,7 +351,7 @@ class Routes(
     )
   )
 
-  // @LINE:31
+  // @LINE:32
   private[this] lazy val controllers_AdminProductCtrl_listProducts15_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("Admin/listProducts/"), DynamicPart("cat", """[^/]+""",true)))
   )
@@ -369,7 +369,7 @@ class Routes(
     )
   )
 
-  // @LINE:33
+  // @LINE:34
   private[this] lazy val controllers_AdminProductCtrl_addProduct16_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("Admin/addProduct")))
   )
@@ -387,7 +387,7 @@ class Routes(
     )
   )
 
-  // @LINE:34
+  // @LINE:35
   private[this] lazy val controllers_AdminProductCtrl_addProductSubmit17_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("Admin/addProductSubmit")))
   )
@@ -405,7 +405,7 @@ class Routes(
     )
   )
 
-  // @LINE:36
+  // @LINE:37
   private[this] lazy val controllers_AdminProductCtrl_updateProduct18_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("Admin/updateProduct/"), DynamicPart("id", """[^/]+""",true)))
   )
@@ -423,7 +423,7 @@ class Routes(
     )
   )
 
-  // @LINE:37
+  // @LINE:38
   private[this] lazy val controllers_AdminProductCtrl_updateProductSubmit19_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("Admin/updateProductSubmit/"), DynamicPart("id", """[^/]+""",true)))
   )
@@ -441,7 +441,7 @@ class Routes(
     )
   )
 
-  // @LINE:39
+  // @LINE:40
   private[this] lazy val controllers_AdminProductCtrl_deleteProduct20_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("Admin/deleteProduct/"), DynamicPart("id", """[^/]+""",true)))
   )
@@ -459,7 +459,7 @@ class Routes(
     )
   )
 
-  // @LINE:41
+  // @LINE:42
   private[this] lazy val controllers_Assets_versioned21_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
@@ -558,55 +558,55 @@ class Routes(
         controllers_ShoppingCtrl_viewOrder12_invoker.call(ShoppingCtrl_1.viewOrder(id))
       }
   
-    // @LINE:28
+    // @LINE:29
     case controllers_AdminProductCtrl_index13_route(params@_) =>
       call { 
         controllers_AdminProductCtrl_index13_invoker.call(AdminProductCtrl_2.index())
       }
   
-    // @LINE:30
+    // @LINE:31
     case controllers_AdminProductCtrl_listProducts14_route(params@_) =>
       call(params.fromQuery[Long]("cat", Some(0L))) { (cat) =>
         controllers_AdminProductCtrl_listProducts14_invoker.call(AdminProductCtrl_2.listProducts(cat))
       }
   
-    // @LINE:31
+    // @LINE:32
     case controllers_AdminProductCtrl_listProducts15_route(params@_) =>
       call(params.fromPath[Long]("cat", None)) { (cat) =>
         controllers_AdminProductCtrl_listProducts15_invoker.call(AdminProductCtrl_2.listProducts(cat))
       }
   
-    // @LINE:33
+    // @LINE:34
     case controllers_AdminProductCtrl_addProduct16_route(params@_) =>
       call { 
         controllers_AdminProductCtrl_addProduct16_invoker.call(AdminProductCtrl_2.addProduct())
       }
   
-    // @LINE:34
+    // @LINE:35
     case controllers_AdminProductCtrl_addProductSubmit17_route(params@_) =>
       call { 
         controllers_AdminProductCtrl_addProductSubmit17_invoker.call(AdminProductCtrl_2.addProductSubmit())
       }
   
-    // @LINE:36
+    // @LINE:37
     case controllers_AdminProductCtrl_updateProduct18_route(params@_) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
         controllers_AdminProductCtrl_updateProduct18_invoker.call(AdminProductCtrl_2.updateProduct(id))
       }
   
-    // @LINE:37
+    // @LINE:38
     case controllers_AdminProductCtrl_updateProductSubmit19_route(params@_) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
         controllers_AdminProductCtrl_updateProductSubmit19_invoker.call(AdminProductCtrl_2.updateProductSubmit(id))
       }
   
-    // @LINE:39
+    // @LINE:40
     case controllers_AdminProductCtrl_deleteProduct20_route(params@_) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
         controllers_AdminProductCtrl_deleteProduct20_invoker.call(AdminProductCtrl_2.deleteProduct(id))
       }
   
-    // @LINE:41
+    // @LINE:42
     case controllers_Assets_versioned21_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
         controllers_Assets_versioned21_invoker.call(Assets_4.versioned(path, file))

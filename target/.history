@@ -341,3 +341,17 @@ compile
 clean
 compile
 run
+clean
+run
+clean
+run
+compile
+run
+compile
+clean
+run
+clean
+run
+clean
+run
+exit

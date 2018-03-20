@@ -79,5 +79,6 @@ public class ProductCtrl extends Controller {
 
         return ok(productDetails.render(p,User.getLoggedIn(session().get("email")),e));
     }
+   
     
 }

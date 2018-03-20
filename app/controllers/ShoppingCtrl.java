@@ -165,9 +165,12 @@ public class ShoppingCtrl extends Controller {
     
     // View an individual order
     @Transactional
-    public Result viewOrder(long id) {
+    public Result viewOrder(Long id) {
         ShopOrder order = ShopOrder.find.byId(id);
         return ok(orderConfirmed.render(getCurrentUser(), order));
+    }
+    public Result viewOrders(Long id){
+        
     }
 
 }
